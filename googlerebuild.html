@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body{
+            height:100vh;
+            width:100vw;
+            
+        }
+    #main{
+        
+        background-color:rgb(255, 255, 255); 
+        display: flex;
+        flex-direction: left;
+        justify-content: center;
+    }
+   
+    #inputid{
+        border: 1px solid rgb(207, 207, 207);
+        border-radius:25px;
+        padding: 10px 10px;
+        width:520px;
+        max-width:65%;
+        display: block;
+        margin: auto;
+        background-color:white; 
+        color: black;
+        font-size:16px;
+        margin: 3px auto;
+    }
+    #inputid:hover{
+     border: 0px;
+     box-shadow: 0px 0px 3px 0px grey;
+    }
+    img{
+        height:auto;
+        width: 240px;
+        
+        display: block;
+        margin: auto;
+        padding-bottom:20px; 
+    }
+    #search{
+        /* border:1px solid ; */
+        margin:35vh 0 10vh 0; 
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        
+    }
+    #subbut{
+        align-self: center;
+        padding: 20px;
+    }
+    button{
+        color:rgb(47, 47, 47);
+        font-weight:600;
+        background-color:rgb(218, 214, 214);
+        border: none;
+        padding: 6px;
+        margin:5px;
+        border-radius: 3px;
+        opacity:0.8;  
+        font-size: 13px;
+        border:0.6px;
+    }
+    button:hover{
+        opacity:1;
+        border: 0.5px solid rgb(182, 180, 180);
+    }
+    #info{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap; 
+        /* margin: 0; */
+        background-color:rgb(240, 240, 240) ;
+        font-size: 16px;
+        font-weight: 500;
+        color: grey;
+ 
+
+    }
+    #subinfo{
+        border-top:1px solid rgb(204, 204, 204);
+        display:block;        
+        width: 100%;
+        padding:8px 25px;  
+    }
+    #subright{
+    float:right;
+    }
+    #subleft{
+        float:left;
+    }
+    #info small{
+        padding-left:10px;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="search">
+     <img src="googlelogo.png" alt="">
+     <input type="text" name="" id="inputid">
+     <div id="subbut">
+            <button type="submit">Google search</button>
+            <button type="submit">I'm Feeling Lucky</button>
+    
+        </div>
+    </div>
+
+    </div>
+    <div id="info">
+            <div id="subinfo">
+            <small>Bangladesh</small>
+            </div>
+            <div id="subinfo">
+              <div id="subleft">
+                  <small>Ads</small>
+                  <small>Business</small>
+                  <small>About</small>
+
+              </div>
+              <div id="subright">
+                    <small>Privacy</small>
+                    <small>Terms</small>
+                    <small>Setting</small>
+  
+              </div>
+            </div>
+           </div>
+    
+</body>
+</html>
